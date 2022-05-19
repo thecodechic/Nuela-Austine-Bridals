@@ -1,0 +1,443 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+
+}
+
+.shipping{
+font-size: 12px;
+}
+
+.text-currency{
+  padding-left: 20px;
+  padding-top: 9px;
+
+}
+#currency{
+  border: none;
+  font-size: 12px;
+  margin-bottom: 40px;
+  width: 80px;
+}
+
+#logo{
+border-radius: 50%;
+width: 150px;
+padding-top: 5px;
+margin-left: 90px;
+}
+
+#search-header{
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+.profile-icons{
+  margin-top: 40px;
+}
+
+.profile-icons a{
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.profile-icons a:hover{
+  background-color: darkgrey;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a{
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.navbar a:hover{
+  background-color: darkgray;
+  color: white;
+}
+
+.hero{
+  background-image: url("Images/hero-image.jpg");
+  background-size: cover;
+  position: relative;
+  height: 400px;
+}
+
+.hero > span{
+position: absolute;
+top: 10%;
+left: 20%;
+font-size: 90px;
+text-transform: uppercase;
+letter-spacing: 1rem;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hero a{
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  font-size: 50px;
+  text-decoration: none;
+  border: 2px solid rgb(33, 32, 28);
+  color:white;
+  padding: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  background: #6D9DC5;
+}
+
+.hero a:hover{
+  background: #e7bb2c;
+  border: none;
+  color: #f4f2dd;
+
+}
+
+.image-gallery{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  row-gap: 10px;
+  margin-top: 30px;
+  
+}
+
+.first{
+  grid-column:2/7 ;
+  grid-row: 1/2;
+}
+
+.first img{
+  height: 400px;
+  width: 300px;
+  padding:0 10px ;
+}
+
+.second{
+  grid-column: 2/7;
+  grid-row: 2/3;
+}
+
+.second img{
+  height: 400px;
+  width: 900px;
+  padding: ;
+}
+
+.third{
+  grid-column: 2/7;
+  grid-row: 3/4;
+}
+
+.third img{
+  width: 450px;
+  height: 400px;
+}
+
+.fourth{
+  grid-column: 2/7;
+  grid-row: 4/5;
+}
+
+.fourth img{
+  width: 900px;
+  height: 400px;
+}
+
+.newsletter{
+  grid-column: 2/6;background-color: burlywood;
+  
+}
+
+.news-container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding :20px 0;
+}
+
+
+.newsletter p{
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.newsletter input{
+  margin-left: 20px;
+  width: 250px;
+  height: 60px;
+}
+
+.newsletter button{
+  margin-left: 20px;
+  width: 150px;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.1rem;
+  height: 60px;
+}
+
+footer{
+  background-color: #6d6875;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  margin-top: 20px;
+}
+
+#footer-logo{
+ width: 200px;
+}
+
+footer a:hover{
+  background-color: gray;
+}
+
+.box-1{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 25px;
+}
+
+.box-2{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-bottom: 70px;
+  margin-left: 50px;
+}
+
+.box-2 a{  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  padding: 3px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+.box-2 h3{
+  color: white;
+}
+.box-3{
+  grid-column: 4/5;
+  grid-row: 1/2;
+  margin-left: 50px;
+}
+
+.box-3 a{
+  text-decoration: none;
+  display: block;
+  text-transform:capitalize;
+  padding: 5px;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+}
+
+.box-3 h3{
+  color: white;
+}
+
+
+
+.box-4{
+  grid-column: 5/6;
+  margin-left: 30px;
+  
+}
+
+.box-4 img{
+  width: 30px;
+}
+
+.box-4 h3{
+  color: white;
+}
+
+.box-4 p{
+  font-size: 15px;
+  color: white;
+  margin-top: 40px;
+}
+
+.about-hero{
+  background-image: url('Images/about-hero.jpg');
+  background-size: cover;
+  background-color: #6d6875; background-position-y: center;
+  position: relative;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.about-grid{
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+.grid-1{
+  width: 512px;
+}
+.container img{
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+}
+
+.our-mission{
+  display: flex;
+  margin-top: 40px;
+}
+.grid-2{
+  width: 510px;
+}
+.grid-2 p, .grid-2 h2{
+  padding: 0 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.grid-3{
+  width: 512px;
+}
+.grid-3 p, .grid-3 h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.quote{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.quote h3{
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.grid-4{
+  width: 512px;
+  
+}
+.grid-4 img{
+  margin-right: 0;
+  padding-left: 5px;
+}
+
+.our-story{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.os-image{
+  width: 512px;
+}
+
+.os-text{
+  width: 510px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.second-quote{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+}
+.second-quote h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+.our-brides{
+  background-color: bisque;
+  padding: 30px 0;
+
+}
+
+.our-brides-container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.our-brides h3{
+  text-align: center;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.our-brides img{
+  max-width: 100%;
+  width: 235px;
+  height: 235px;
+}
+.our-brides ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+  ;
+}
+
+.our-brides li{
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.our-brides p{
+  padding-left: 40px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+.our-brides a{
+  background: #030303;
+  border: 0;
+  color: #f4f2dd;
+  display: block;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 20%;
+}
+
+
